@@ -11,7 +11,7 @@ Ini adalah proyek aplikasi web untuk manajemen kursus digital, dibangun mengguna
 
 ## Teknologi yang Digunakan
 
-- **Backend**: Laravel 8
+- **Backend**: Laravel 9
 - **Frontend**: Vue.js 3
 - **Database**: MySQL
 - **CSS Framework**: Bootstrap 5
@@ -20,7 +20,7 @@ Ini adalah proyek aplikasi web untuk manajemen kursus digital, dibangun mengguna
 
 Sebelum memulai, pastikan Anda telah menginstal software berikut:
 
-- PHP >= 7.3
+- PHP >= 8.0.3
 - Composer
 - Node.js dengan NPM
 - MySQL atau MariaDB

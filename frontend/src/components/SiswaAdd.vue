@@ -84,7 +84,7 @@ export default {
       api
         .post('/siswa', this.siswa)
         .then(() => {
-          this.$router.push('/')
+          this.$router.push('/siswa')
         })
         .catch((error) => {
           console.error('Terjadi kesalahan saat menambahkan siswa:', error)
