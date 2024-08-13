@@ -1,0 +1,206 @@
+@import './base.css';
+
+/* Gaya Global */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  display: block;
+  place-items: center;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Container */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl,
+.container-fluid {
+  max-width: 100%;
+  margin-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-container {
+  height: 50vh; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.3), /* Inner shadow atas */
+              inset 0 -10px 10px -10px rgba(0, 0, 0, 0.3); /* Inner shadow bawah */
+}
+
+/* Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+/* Scrollable Content */
+.scrollable-content {
+  flex: 1 1 auto;
+  max-height: 70vh; /* Sesuaikan dengan kebutuhan */
+  overflow-y: auto; /* Aktifkan scroll hanya pada konten */
+  overflow-x: hidden; /* Hilangkan scroll ke samping */
+  scrollbar-width: thin;
+  scrollbar-color: #4CAF50 #E0E0E0;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #E0E0E0;
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 10px;
+  border: 2px solid #E0E0E0;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: #388E3C;
+}
+
+/* Card */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Pastikan kartu memiliki tinggi penuh */
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+}
+
+h5.card-title {
+  font-size: 1.25rem; /* Sesuaikan ukuran font untuk konsistensi */
+  margin-bottom: 0.75rem;
+}
+
+p.card-text {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+/* Tombol */
+.btn {
+  margin-right: 5px;
+}
+
+.btn-custom {
+  padding-top: 10px;  
+  padding-bottom: 10px; 
+  line-height: 1.5; 
+  height: 100%;
+}
+
+.btn-success {
+  margin-top: 20px;
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Form */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Flexbox Utilities */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+/* Gaya untuk label status */
+.badge {
+  padding: 0.5em 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}

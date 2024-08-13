@@ -1,0 +1,144 @@
+# Kursus Digital ChatGPT
+
+Ini adalah proyek aplikasi web untuk manajemen kursus digital, dibangun menggunakan Laravel untuk backend dan Vue.js untuk frontend. Aplikasi ini memungkinkan pengguna untuk mengelola data siswa, kursus, dan pendaftaran secara efisien.
+
+## Fitur
+
+- **Manajemen Siswa**: Tambah, edit, hapus, dan cari data siswa.
+- **Manajemen Kursus**: Tambah, edit, hapus, dan filter data kursus berdasarkan hari dan jam.
+- **Pendaftaran Kursus**: Mengelola pendaftaran siswa ke kursus tertentu.
+- **Responsive Design**: UI yang responsif dan user-friendly.
+
+## Teknologi yang Digunakan
+
+- **Backend**: Laravel 8
+- **Frontend**: Vue.js 3
+- **Database**: MySQL
+- **CSS Framework**: Bootstrap 5
+
+## Prasyarat
+
+Sebelum memulai, pastikan Anda telah menginstal software berikut:
+
+- PHP >= 7.3
+- Composer
+- Node.js dengan NPM
+- MySQL atau MariaDB
+
+## Instalasi
+
+Ikuti langkah-langkah berikut untuk menyiapkan proyek ini di lingkungan lokal Anda.
+
+### 1. Clone Repositori
+
+```bash
+git clone https://github.com/username/repo.git
+cd repo
+```
+
+### 2. Instal Dependensi Backend
+
+```bash
+composer install
+```
+
+### 3. Konfigurasi Environment
+
+Salin file `.env.example` menjadi `.env` dan konfigurasikan sesuai dengan environment lokal Anda:
+
+```bash
+cp .env.example .env
+```
+
+Konfigurasi database di `.env`:
+
+```
+DB_DATABASE=nama_database
+DB_USERNAME=user_database
+DB_PASSWORD=password_database
+```
+
+### 4. Generate Key Aplikasi
+
+```bash
+php artisan key:generate
+```
+
+### 5. Migrasi dan Seed Database
+
+Jalankan perintah berikut untuk migrasi dan seeding database:
+
+```bash
+php artisan migrate --seed
+```
+
+### 6. Instal Dependensi Frontend
+
+```bash
+npm install
+```
+
+### 7. Compile Aset Frontend
+
+Untuk development:
+
+```bash
+npm run dev
+```
+
+Untuk production:
+
+```bash
+npm run build
+```
+
+### 8. Jalankan Server
+
+Jalankan server Laravel:
+
+```bash
+php artisan serve
+```
+
+Buka proyek di browser:
+
+```
+http://localhost:8000
+```
+
+## Struktur Proyek
+
+- **/app**: Berisi file-file model, controller, dan logika backend Laravel.
+- **/resources/js**: Berisi file Vue.js.
+- **/resources/views**: Berisi blade templates.
+- **/public**: Berisi aset frontend yang tercompile.
+- **/routes**: Berisi file routes untuk Laravel.
+
+## Penggunaan
+
+### Manajemen Siswa
+
+1. Tambah siswa melalui halaman Siswa.
+2. Cari siswa dengan menggunakan fitur pencarian.
+3. Edit atau hapus data siswa dari daftar.
+
+### Manajemen Kursus
+
+1. Tambah kursus baru dengan mengisi nama, deskripsi, hari, jam mulai, dan jam selesai.
+2. Gunakan filter hari dan jam untuk menyaring daftar kursus.
+3. Edit atau hapus kursus yang ada.
+
+### Pendaftaran Kursus
+
+1. Daftarkan siswa ke kursus melalui halaman Pendaftaran.
+2. Pantau status pendaftaran siswa.
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan fork repositori ini dan kirimkan pull request. Kami menyambut baik kontribusi Anda.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+
+---
